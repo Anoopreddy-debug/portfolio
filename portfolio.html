@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Custom scroll behavior for smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .section-title {
+            color: #0d9488; /* Teal color */
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .card-bg {
+            background-color: #ffffff;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .card-bg:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn {
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-primary {
+            background-color: #0d9488;
+        }
+
+        .btn-primary:hover {
+            background-color: #0f766e;
+        }
+
+        .text-accent {
+            color: #0d9488;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 min-h-screen">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-lg p-4">
+        <nav class="container mx-auto flex justify-end items-center">
+            <ul class="hidden md:flex space-x-6 lg:space-x-10 text-sm lg:text-base font-medium">
+                <li><a href="#about" class="hover:text-teal-600 transition-colors duration-300">About Me</a></li>
+                <li><a href="#education" class="hover:text-teal-600 transition-colors duration-300">Education</a></li>
+                <li><a href="#skills" class="hover:text-teal-600 transition-colors duration-300">Skills</a></li>
+                <li><a href="#projects" class="hover:text-teal-600 transition-colors duration-300">Projects</a></li>
+                <li><a href="#contact" class="hover:text-teal-600 transition-colors duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 md:py-16">
+
+        <!-- Hero Section - Personal Information -->
+        <section id="hero" class="text-center py-20 md:py-32">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight section-title">
+                Hello, I'm Anoop
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8">A passionate B.Tech CSE student specializing in programming and cybersecurity.</p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+                <a href="#projects" class="w-full md:w-auto px-10 py-4 font-semibold rounded-full shadow-lg text-white btn btn-primary hover:scale-105">View My Work</a>
+                <a href="#contact" class="w-full md:w-auto px-10 py-4 font-semibold rounded-full shadow-lg text-gray-600 border border-gray-300 hover:bg-gray-200 hover:scale-105 btn">Get in Touch</a>
+            </div>
+        </section>
+
+        <!-- About Me / Reflections -->
+        <section id="about" class="mb-16 md:mb-24 p-8 card-bg rounded-xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center section-title">About Me</h2>
+            <div class="prose max-w-3xl mx-auto text-gray-700">
+                <p>Welcome to my personal e-portfolio. I am a 3rd student at IIIT sricity, specializing in CSE. I've created this space to share my journey, showcase my skills, and reflect on my growth.</p>
+                <p>Throughout my studies, I've developed a strong foundation in programming and cybersecurity. I am a curious and driven individual who is always seeking new challenges and opportunities to learn. I believe that every project, whether academic or personal, is a chance to grow and refine my abilities.</p>
+                <p>This portfolio is a living document of my progress and aspirations, and I hope you find it informative.</p>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="mb-16 md:mb-24 p-8 card-bg rounded-xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center section-title">Education</h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                <div class="bg-gray-100 p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <h3 class="text-xl font-semibold text-accent">Indian Institute of Information Technology, Sricity</h3>
+                    <p class="text-lg text-gray-600">B.Tech in Computer Science and Engineering</p>
+                    <p class="text-sm text-gray-500 mt-1">2023 - 2027</p>
+                    <p class="mt-4 text-gray-700">GPA: 8.0/10.0</p>
+                </div>
+                <!-- Intermediate Education -->
+                <div class="bg-gray-100 p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <h3 class="text-xl font-semibold text-accent">Intermediate Education (XI & XII)</h3>
+                    <p class="text-lg text-gray-600">Srichaitanya Junior College - MPC Course</p>
+                    <p class="text-sm text-gray-500 mt-1">Class 12th</p>
+                    <p class="mt-4 text-gray-700">Percentage: 97.9%</p>
+                </div>
+                <!-- Secondary Education -->
+                <div class="bg-gray-100 p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <h3 class="text-xl font-semibold text-accent">Secondary Education (SSC)</h3>
+                    <p class="text-lg text-gray-600">Srichaitanya Techno School</p>
+                    <p class="text-sm text-gray-500 mt-1">Class 10th</p>
+                    <p class="mt-4 text-gray-700">GPA: 10.0/10.0</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills -->
+        <section id="skills" class="mb-16 md:mb-24 p-8 card-bg rounded-xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center section-title">Skills</h2>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <h3 class="text-xl font-semibold text-accent">Languages</h3>
+                    <ul class="list-disc list-inside mt-4 text-gray-700">
+                        <li>C</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <h3 class="text-xl font-semibold text-accent">Tools & Platforms</h3>
+                    <ul class="list-disc list-inside mt-4 text-gray-700">
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                        <li>Nmap</li>
+                        <li>Burpsuite</li>
+                        <li>Metasploit</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <h3 class="text-xl font-semibold text-accent">Coursework</h3>
+                    <ul class="list-disc list-inside mt-4 text-gray-700">
+                        <li>Data Structures & Algorithms</li>
+                        <li>Operating Systems</li>
+                        <li>DBMS</li>
+                        <li>CCN</li>
+                        <li>AI</li>
+                        <li>Discrete Math</li>
+                        <li>Linear Algebra</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <h3 class="text-xl font-semibold text-accent">Soft Skills</h3>
+                    <ul class="list-disc list-inside mt-4 text-gray-700">
+                        <li>Problem-Solving</li>
+                        <li>Teamwork</li>
+                        <li>Communication</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience / Projects -->
+        <section id="projects" class="mb-16 md:mb-24 p-8 card-bg rounded-xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center section-title">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Project 1 -->
+                <div class="bg-gray-100 rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <img src="https://placehold.co/600x400/D1D5DB/6B7280?text=OWASP+Risk+Calculator" alt="OWASP Risk Calculator Thumbnail" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-accent mb-2">OWASP Risk Calculator</h3>
+                        <p class="text-gray-600 text-sm mb-4">Python, CLI-based</p>
+                        <p class="text-gray-700 mb-4">Built a CLI-based OWASP risk calculator that assesses security risks using factors like threat agent, vulnerability, and impact scores. Emphasized cybersecurity awareness and hands-on understanding of real-world risk models.</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-gray-100 rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <img src="https://placehold.co/600x400/D1D5DB/6B7280?text=AgroChain" alt="AgroChain Thumbnail" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-accent mb-2">AgroChain</h3>
+                        <p class="text-gray-600 text-sm mb-4">HTML, CSS, EJS, Node.js, Express.js, MongoDB</p>
+                        <p class="text-gray-700 mb-4">Developed a full-stack web application to digitize the agricultural supply chain, connecting farmers, dealers, and retailers through a unified platform. Implemented role-based authentication and a full order workflow system.</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-gray-100 rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <img src="https://placehold.co/600x400/D1D5DB/6B7280?text=Python+Keylogger" alt="Python Keylogger Thumbnail" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-accent mb-2">Python Keylogger</h3>
+                        <p class="text-gray-600 text-sm mb-4">Python, pynput</p>
+                        <p class="text-gray-700 mb-4">Developed a Python-based keylogger to capture and timestamp keystrokes for monitoring purposes. Ensured ethical use by implementing a safe shutdown (ESC key) and logging only with user consent.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements & Awards -->
+        <section id="achievements" class="mb-16 md:mb-24 p-8 card-bg rounded-xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center section-title">Achievements & Awards</h2>
+            <ul class="space-y-4 max-w-3xl mx-auto text-gray-700">
+                <li class="bg-gray-100 p-4 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <p class="font-semibold text-lg text-accent">JEE Mains Percentile - 2023</p>
+                    <p class="text-sm mt-1">Scored 98.04 percentile (Top 2%) among 1.13 million candidates.</p>
+                </li>
+                <li class="bg-gray-100 p-4 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <p class="font-semibold text-lg text-accent">Intermediate Score - 2023</p>
+                    <p class="text-sm mt-1">Scored 979 out of 1000 in Intermediate Public Examinations (IPE).</p>
+                </li>
+                <li class="bg-gray-100 p-4 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <p class="font-semibold text-lg text-accent">Google Cybersecurity Certificate</p>
+                    <p class="text-sm mt-1">Completed a professional-level course covering threat analysis, SIEM tools, and vulnerability management.</p>
+                </li>
+            </ul>
+        </section>
+        
+        <!-- Extracurricular & Volunteering -->
+        <section id="extracurricular" class="mb-16 md:mb-24 p-8 card-bg rounded-xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center section-title">Extracurricular & Volunteering</h2>
+            <div class="max-w-3xl mx-auto space-y-4 text-gray-700">
+                <div class="bg-gray-100 p-4 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <p class="font-semibold text-lg text-accent">ENIGMA, Core Member - Jan 2024 - Mar 2024</p>
+                    <p class="mt-1 text-sm">Organized workshops, hackathons, and knowledge-sharing sessions to help members strengthen their technical, creative, and leadership abilities.</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <p class="font-semibold text-lg text-accent">GRADIENT, Core Member - Oct 2024 - Nov 2024</p>
+                    <p class="mt-1 text-sm">Created a platform for members to explore new ideas, develop practical skills, and contribute through events, projects, and initiatives.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume & References -->
+        <section id="resume-references" class="mb-16 md:mb-24 p-8 card-bg rounded-xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 section-title">Resume & References</h2>
+            <p class="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
+                For a detailed look at my experience and qualifications, please feel free to download my resume.
+            </p>
+            <!-- The href attribute correctly points to the name of the uploaded file. -->
+            <a href="https://pdflink.to/e0de8fd4/" class="inline-block px-10 py-4 font-semibold rounded-full shadow-lg text-white btn btn-primary hover:scale-105">
+                Download Resume
+            </a>
+            <p class="text-sm text-gray-500 mt-4">
+                References are available upon request.
+            </p>
+        </section>
+
+        <!-- Contact / Links -->
+        <section id="contact" class="p-8 card-bg rounded-xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 section-title">Contact & Links</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                <!-- Contact Email -->
+                <div class="flex items-center space-x-2">
+                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-9 13v-8a2 2 0 00-2-2H8a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-8a2 2 0 00-2-2h-2a2 2 0 00-2 2v8z"></path></svg>
+                    <span id="email-text" class="text-gray-700">annapureddyanoop@gmail.com</span>
+                    <button id="copy-email-btn" class="text-gray-500 hover:text-accent transition-colors duration-300 ml-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    </button>
+                </div>
+                <!-- Social Links -->
+                <div class="flex space-x-6 text-gray-700">
+                    <!-- GitHub Profile Link -->
+                    <a href="https://github.com/Anoopreddy-debug" target="_blank" class="hover:text-accent transition-colors duration-300">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.867-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.465-1.11-1.465-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.088 2.91.834.091-.647.351-1.088.636-1.338-2.22-.253-4.555-1.116-4.555-4.951 0-1.094.39-1.983 1.029-2.678-.103-.252-.446-1.264.098-2.641 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.377.202 2.39.099 2.641.64.695 1.028 1.584 1.028 2.678 0 3.848-2.339 4.695-4.566 4.942.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                    </a>
+                    <!-- LinkedIn Profile Link -->
+                    <a href="https://linkedin.com/in/anoop-annapureddy-16a331309" target="_blank" class="hover:text-accent transition-colors duration-300">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.763s.784-1.763 1.75-1.763 1.75.79 1.75 1.763-.783 1.763-1.75 1.763zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-gray-500 text-sm py-8 border-t border-gray-200 mt-16">
+        <p>&copy; <span id="current-year"></span> Anoop. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Copy email to clipboard
+        document.getElementById('copy-email-btn').addEventListener('click', function() {
+            const emailText = document.getElementById('email-text').textContent;
+            const tempInput = document.createElement('textarea');
+            tempInput.value = emailText;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            
+            // Show a temporary message
+            const originalText = this.innerHTML;
+            this.innerHTML = '<span class="text-green-500">Copied!</span>';
+            setTimeout(() => {
+                this.innerHTML = originalText;
+            }, 2000);
+        });
+
+        // Set current year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
